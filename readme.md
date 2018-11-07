@@ -1,6 +1,6 @@
 # ZX Ventures Backend Challenge
 
-Node API para buscar o PDV que seja o mais próximo a atender determinadas coordenadas. Além de possuir inserção, buscar por id e listar todos.
+Node API para dado uma localização (lng, lat), busque o PDV mais próximo e que atenda à mesma, conforme sua área de cobertura.
 
 ## Tecnologias e Motivos da escolha
 
