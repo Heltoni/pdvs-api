@@ -1,0 +1,34 @@
+version: '3.2'
+services:
+    node:
+      build: .
+      ports:
+        - "7000:7000"
+      depends_on:
+        - db
+      networks:
+        - pdvsNet
+      environment:
+        - NODE_ENV=dev
+        - DATABASE_HOST=db
+        - DATABASE_USER=node-user
+        - DATABASE_PASS=pass-challenge
+        - DATABASE_CATALOG=pdvs-challenge
+      command:
+        - node start
+      command: 'node app.js'
+    db:
+      build: ./db
+      ports:
+        - "3306:3306"
+      networks:
+        - pdvsNet
+      environment:
+        - MYSQL_ROOT_PASSWORD=root
+        - MYSQL_DATABASE=pdvs-challenge
+        - MYSQL_USER=node-user
+        - MYSQL_PASSWORD=pass-challenge
+networks:
+   pdvsNet:
+     driver: bridge
+          

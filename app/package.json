@@ -1,0 +1,22 @@
+{
+  "name": "pdv-api",
+  "version": "1.0.0",
+  "description": "pdv rest api",
+  "main": "app.js",
+  "scripts": {
+    "docker": "node app.js",
+    "start": "node app.js"
+  },
+  "author": "@Emanuel Rocha",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "mysql2": "^1.6.1"
+    
+  }
+}
