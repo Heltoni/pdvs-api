@@ -33,7 +33,7 @@ app.get("/pdvs/:lng/:lat", (req, res) => {
     repository.getByCoordinates(app, req, res);
 });
 
-//Rota para inserção de um novo pdv (todos os campos obrigatórios)
+//Rota para inserção de um novo pdv (todos os campos são campos obrigatórios!)
 app.post("/pdvs", (req, res) => {
     repository.postPdv(app, req, res); 
 });
