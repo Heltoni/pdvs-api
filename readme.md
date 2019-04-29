@@ -23,7 +23,7 @@ Node API para dado uma localização (lng, lat), busque o PDV mais próximo e qu
 ## Executar o Projeto
 
 - Para executar o projeto, dentro da pasta raiz do projeto execute o comando 'docker-compose up --build -d' 
-- Este comando irá compilar e subir suas imagens docker, disponibilizando um api que escuta através de 'http://localhost:7000'
+- O comando irá compilar e subir suas imagens docker, disponibilizando um api que escuta através de 'http://localhost:7000'
 
 ## Rotas 
 
